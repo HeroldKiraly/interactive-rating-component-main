@@ -1,0 +1,190 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Gray: hsl(217, 12%, 63%);
+    --Medium-Gray: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Very-Dark-Blue);
+}
+
+main {
+    background: radial-gradient(circle at center -1rem, var(--Dark-Blue) 1%, var(--Very-Dark-Blue) 200%);
+    border-radius: 2rem;
+    width: 400px;
+    padding: 2rem;
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--Dark-Blue);
+    width: 3rem;
+    height: 3rem;
+}
+.star-container > img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.rate-text {
+    margin: 2rem 0 2rem 0;
+    font-weight: 700;
+    color: var(--White)
+}
+
+.rate-text > h1 {
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.rate-text > p {
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+    font-size: .9375rem;
+    font-weight: 400;
+    color: var(--Medium-Gray);
+}
+
+.button-selected {
+    background-color: var(--Light-Gray) !important;
+}
+
+.button-selected > span {
+    color: var(--White);
+}
+
+.rating-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rating-buttons > .button {
+    color: var(--Light-Gray);
+    background-color: var(--Dark-Blue);
+    height: 3.3rem;
+    width: 3.3rem;
+    border: 0;
+    border-radius: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-buttons > .button:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Orange);
+    color: var(--White);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    height: 2.8rem;
+    width: 100%;
+    border: 0;
+    border-radius: 2rem;
+}
+.submit-button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+#thank-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--White);
+}
+
+.image-container {
+    margin-top: 1.2157rem;
+    margin-bottom: 0.2156rem;
+}
+
+.final-rating {
+    background-color: var(--Dark-Blue);
+    border-radius: 2rem;
+    margin: 1.2rem 0rem 1rem 0rem
+}
+
+.final-rating > p {
+    font-weight: 400;
+    font-size: 0.93rem;
+    color: var(--Orange);
+    margin: 0.5rem 1rem 0.4rem 1rem;
+}
+
+.thank-message {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.thank-message > h1 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0rem 0rem 1.4315rem 0rem;
+}
+
+.thank-message > p {
+    font-size: 0.93rem;
+    line-height: 1.5rem;
+    color: var(--Medium-Gray);
+}
+
+.visibility-none {
+    display: none !important; 
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+}
+
+
+.attribution { color: var(--Light-Gray); font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 500px) {
+    main {
+        scale: 0.8;
+    }
+    footer {
+        scale: 0.8;
+    }
+}
