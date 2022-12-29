@@ -1,4 +1,4 @@
-rateButtons = document.querySelectorAll('#rate-button');
+rateButtons = document.querySelectorAll('.rate-button');
 submitButton = document.querySelectorAll("#submit");
 
 rateSection = document.querySelectorAll("#rate-container");
