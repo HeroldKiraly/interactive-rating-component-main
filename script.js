@@ -1,11 +1,11 @@
-rateButtons = document.querySelectorAll('.rate-button');
-submitButton = document.querySelectorAll("#submit");
+let rateButtons = document.querySelectorAll('.rate-button');
+let submitButton = document.querySelectorAll("#submit");
 
-rateSection = document.querySelectorAll("#rate-container");
-thankSection = document.querySelectorAll("#thank-container");
-finalRating = document.querySelectorAll("#rating");
+let rateSection = document.querySelectorAll("#rate-container");
+let thankSection = document.querySelectorAll("#thank-container");
+let finalRating = document.querySelectorAll("#rating");
 
-currentRating = 0;
+let currentRating = 0;
 
 rateButtons.forEach(rateButton => {
     rateButton.addEventListener('click', function () {
